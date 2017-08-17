@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', function(){
     });  
     
     var textBox = document.querySelector('#text-box');
-    var textButton = document.querySelector('#text-button');
+    var textButton = document.querySelector('#textbuttn');
     textButton.addEventListener('click', function(){
         
         textBox.value = 'Can\'t Touch This';
         
     });
  
-    var mouseColors = document.querySelector('#mouse-colors');
+    var mouseColors = document.querySelector('#mouse_colors');
     mouseColors.addEventListener('mouseover', function(){
         mouseColors.style.backgroundColor = 'green';
     });
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function(){
         mouseColors.style.backgroundColor = 'yellow';
     });
     
-    var randomColorText = document.querySelector('#random-color-text');
+    var randomColorText = document.querySelector('#randomcolor');
     randomColorText.addEventListener('click', function(){
        var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
         randomColorText.style.color = hue;
@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', function(){
     });
     
     var friendsUl = document.querySelector('#friends-ul');
-    var friendsButton = document.querySelector('#friends-button');
-    var friends = ['Jermain', 'Dylan', 'JB', 'Carlton', 'Greg', 'Chance'
-        , 'Tyler', 'Lance', 'Domonique', 'Chris'];
+    var friendsButton = document.querySelector('#friendsbuttn');
+    var friends = ['Nequil', 'Dylan', 'JB', 'Carlton', 'Greg', 'Chance'
+        , 'Tyler', 'Lance', 'Domonique', 'Chris', 'Adriane'];
     friendsButton.addEventListener('click', function(){
         for(var i = 0; i < friends.length; i++){
                 var lis = document.createElement('li');
@@ -54,8 +54,4 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 })
 
-    /*7*/
-    var changeNames = document.querySelector('#change-name');
-    changeNames.addEventListener('click', function(){
-       var newLi = document.querySelector('li');
-    })
+ 
